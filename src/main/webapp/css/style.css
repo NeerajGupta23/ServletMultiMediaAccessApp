@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(32 26 34 / 99%);
+}
+
+h1.welcome {
+    padding-top: 3.2%;
+    background-color: #62b0ff;
+    color: rgb(101 0 88);
+    text-align: center;
+    text-shadow: 1px 1px #515cff;
+    font-size: 345%;
+}
+
+div.flexbox {
+    display: flex;
+    flex-flow: column;
+    margin-top: 12%;
+    margin-left: 7%;
+    margin-right: 7%;
+    /* border: 2px solid green; */
+}
+
+div.flexbox a {
+    margin: 5%;
+}
+
+div.audio,
+div.image,
+div.video,
+div.pdf {
+    color: rgb(246 255 59);
+    background-color: #320d2e;
+    border: 6px solid rgb(248 255 94);
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 220%;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* for image.html  */
+div.img img {
+    margin: 5%;
+    height: 25%;
+    width: 25%;
+    border: 6px solid rgb(233, 178, 0);
+    border-radius: 20px
+}
+
+
+/* for seperator  */
+.container {
+    position: relative;
+    background: #62b0ff;
+    height: 30vh;
+}
+
+.wave {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: #62b0ff;
+    bottom: 0;
+}
+
+.wave::before,
+.wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+}
+
+.wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: rgb(32 26 34 / 99%);
+    right: -1.5%;
+    top: 60%;
+    border-top:30px solid rgb(130, 52, 255);
+}
+
+.wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: #62b0ff;
+    left: -1.5%;
+    top: 40%;
+    border-bottom: 30px solid rgb(130, 52, 255);
+}
